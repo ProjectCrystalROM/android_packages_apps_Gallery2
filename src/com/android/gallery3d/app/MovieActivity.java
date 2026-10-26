@@ -284,7 +284,7 @@ public class MovieActivity extends Activity {
             }
         });
         String title = intent.getStringExtra(Intent.EXTRA_TITLE);
-        if (title != null && actionBar != null) {
+        if (title != null) {
             actionBar.setTitle(title);
         } else {
             // Displays the filename as title, reading the filename from the
@@ -792,7 +792,7 @@ public class MovieActivity extends Activity {
             Log.v(TAG, "setActionBarTitle(" + title + ")");
         }
         ActionBar actionBar = getActionBar();
-        if (title != null) {
+        if (title != null && actionBar != null) {
             actionBar.setTitle(title);
         }
     }
