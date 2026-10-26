@@ -284,7 +284,7 @@ public class MovieActivity extends Activity {
             }
         });
         String title = intent.getStringExtra(Intent.EXTRA_TITLE);
-        if (title != null) {
+        if (title != null && actionBar != null) {
             actionBar.setTitle(title);
         } else {
             // Displays the filename as title, reading the filename from the
